@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/image_folder"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:src="@mipmap/item_check"/>
+
+    <TextView
+        android:id="@+id/folder_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_folder"
+        android:layout_alignStart="@+id/folder_name"
+        android:layout_marginBottom="15dp"
+        android:text="文件数量"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/folder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_folder"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/image_folder"
+        android:text="文件夹名"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+</RelativeLayout>
